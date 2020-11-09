@@ -9,7 +9,7 @@
 #else:
   #print("you are gratuated")
 
-x=int(input("please enter your age:"))
+'''x=int(input("please enter your age:"))
 
 number_ticket_price=3
 the_free_price=0
@@ -17,7 +17,9 @@ the_discount_price=1.5
 
 if x<6 or x>60:
   print("the price is:",the_free_price)
-elif 6<x<18 :
+elif x<18 :
   print("the price is:", the_discount_price)
 else:
-  print("the price is:",number_ticket_price)
+  print("the price is:",number_ticket_price)'''
+
+
