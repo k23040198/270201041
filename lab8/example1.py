@@ -3,5 +3,5 @@ def sum_():
   sum_=0
   for i in a_list:
     sum_+=i
-  print(sum_)
+  print(sum_**2)
 sum_()
