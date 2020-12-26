@@ -3,7 +3,7 @@ import time
 def simple_timer(t):
     if t==0:
         print("ENDED!!")
-        return 0
+        return ""
     else:
         print("remaining time:",t)
         time.sleep(1)
