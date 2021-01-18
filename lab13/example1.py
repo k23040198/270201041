@@ -12,5 +12,5 @@ def binary_search(list_, element):
             return binary_search(list_[mid_element + 1:], element) + mid_element + 1
 
 
-print(binary_search([ 1,2, 5, 6, 8, 9, 74, 98, 100],3))
+print(binary_search([ 1,2, 5, 6, 8, 9, 74, 98, 100],98))
 
