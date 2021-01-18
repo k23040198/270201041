@@ -17,7 +17,7 @@ class DNA():
 
   def calculate_complement(self):
     new_dna=""
-    for _ in self.dna:
+    for _ in self.dna[::-1]:
       if _== "A":
         new_dna+="T"
       elif _== "T":
