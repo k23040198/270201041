@@ -9,8 +9,12 @@ def binary_search(list_, element):
         elif element < list_[mid_element]:
             return binary_search(list_[0:mid_element], element)
         else:
-            return binary_search(list_[mid_element + 1:], element) + mid_element + 1
+            index= binary_search(list_[mid_element + 1:], element) 
+            if index== -1 :
+              pass
+            else:
+              index+= mid_element+1
+            return index
 
-
-print(binary_search([ 1,2, 5, 6, 8, 9, 74, 98, 100],98))
+print(binary_search([ 1,2, 5, 6, 8, 9, 74, 98, 100],3))
 

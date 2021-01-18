@@ -28,7 +28,27 @@ class DNA():
         new_dna+="G"
 
     return new_dna
+  
+  def count_point_mutations(self,dna):
+    differ=0
+    for i in range(len(dna)):
+      if self.dna[i]!= dna[i]:
+        differ+=1
+    return differ
 
-d1=DNA("ATGC")
+  def  find_motif(self,sub_dna):
+    indexes=[]
+    def index(dna_):
+      if len(dna_)> len(self.dna):
+        return [0]
+      else:
+        if dna_ in self.dna:
+          indexes.append(self.dna.index(dna_[0]))
+          return index(dna_[self.dna.index(dna_[0]):])
+    index(sub_dna)
+    return indexes
+
+d1=DNA("GAGCC")
 print(d1.count_nucleotides())
 print(d1.calculate_complement())
+print(d1.count_point_mutations("CATCG"))
