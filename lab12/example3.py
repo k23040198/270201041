@@ -51,4 +51,3 @@ class DNA():
 d1=DNA("GAGCC")
 print(d1.count_nucleotides())
 print(d1.calculate_complement())
-print(d1.count_point_mutations("CATCG"))
