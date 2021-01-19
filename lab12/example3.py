@@ -38,16 +38,14 @@ class DNA():
 
   def  find_motif(self,sub_dna):
     indexes=[]
-    def index(dna_):
-      if len(dna_)> len(self.dna):
-        return [0]
-      else:
-        if dna_ in self.dna:
-          indexes.append(self.dna.index(dna_[0]))
-          return index(dna_[self.dna.index(dna_[0]):])
-    index(sub_dna)
+    len_sub=len(sub_dna)
+    len_dna=len(self.dna)
+    for i in range(0,len_dna-len_sub+1):
+      if self.dna[i:i+len_sub]== sub_dna:
+        indexes.append(i)
     return indexes
 
-d1=DNA("GAGCC")
+d1=DNA("GATATATGCATATACTT")
 print(d1.count_nucleotides())
 print(d1.calculate_complement())
+print(d1.find_motif("ATA"))
