@@ -8,4 +8,4 @@ def pascal_triangle_line(n):
             line.append(previous_line[i] + previous_line[i+1])
         line += [1]
         return line
-print(pascal_triangle_line(7))
+print(pascal_triangle_line(3))

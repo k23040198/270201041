@@ -11,8 +11,8 @@ class Employee:
     def set_salary(self, salary):
         self.salary = salary
     def display_info(self):
-        print("Name:", self.name)
-        print("Salary:", self.salary)
+        print("Name:", self.get_name())
+        print("Salary:", self.get_salary())
 
 class Company:
     def __init__(self):
@@ -35,9 +35,10 @@ class Company:
             employee.display_info()
 
 company = Company()
-e1 = Employee("sude", 500)
+e1 = Employee("ayşe", 500)
 e2 = Employee("ebru", 3900)
 e3 = Employee("sude", 2500)
+print(e3.get_name())
 company.add_employee(e1)
 company.add_employee(e2)
 company.add_employee(e3)
