@@ -12,6 +12,6 @@ def binary_search(arr, low, high, x):
 
 
 list_ = [2, 3, 4, 10, 40]
-print(binary_search(list_,0,len(list_)-1,7))
+print(binary_search(list_,0,len(list_)-1,4))
 
   
