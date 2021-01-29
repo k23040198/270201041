@@ -1,30 +1,18 @@
-def binary_to_dec(binary):
-  summ=0
-  length=len(binary)
-  ind = 0
-  while ind<=len(binary)-1:
-    for i in binary:
-      if i=="0":
-        ind += 1
-        continue
-      elif i=="1":
-        a=2**(length-ind-1)
-        summ+=a
-        ind+=1
-    return summ
-print(binary_to_dec("10010"))
-
-def dec_to_binary(deci):
-  binary=""
-  while True:
-    a=deci//2
-    remaining_part = str(deci - (a * 2))
-    deci=a
-    binary+=remaining_part
-    if a==0:
-      break
-  return binary[::-1]
-print(dec_to_binary(18))
-
-  
-  
+def is_prime(num):
+    prime=True
+    for i in range(2,int((num**0.5)+1)):
+        if num%i==0:
+            prime=False
+        elif num==0 or  num==1:
+            prime=False
+    return prime
+    
+def print_primes_between():
+    list=[]
+    number1=int(input("Please enter the number "))
+    number2=int(input("Please enter the number "))
+    for i in range(number1+1,number2):
+        if is_prime(i)==True and i!=1:
+            list.append(i)
+    print(list)
+print_primes_between()
