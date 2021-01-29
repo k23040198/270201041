@@ -16,7 +16,6 @@ def selection_sort(list_):
 list_=[-8,4,6,98,-36,-63,89,10]
 
 print(selection_sort(list_))
-
 print(list_)
 
 
